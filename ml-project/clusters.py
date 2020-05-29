@@ -16,10 +16,11 @@ X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.3)
 
 text_clf = Pipeline([('tfidf',TfidfVectorizer()),('clf',LinearSVC())])
 text_clf.fit(X_train, y_train)
-predictions = text_clf.predict(['computer','transport'])
+predictions = text_clf.predict(X_test)
 
-for pred in predictions:
-    print(pred)
+# predictions = text_clf.predict(['computer','transport'])
+# for pred in predictions:
+#     print(pred)
 
-# print(classification_report(y_test, predictions))
-# print(accuracy_score(y_test, predictions))
+print(classification_report(y_test, predictions))
+print(accuracy_score(y_test, predictions))
