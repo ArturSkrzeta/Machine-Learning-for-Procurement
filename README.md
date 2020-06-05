@@ -5,6 +5,7 @@
   <li>UNSPSC code descriptions are taken as features in ML model training</li>
   <li>Team's clusters (f.e.: Information Technologies, Logistic) are taken as labels in ML model training</li>
   <li>Accuracy for the model equals 80% which for our purpose is totally enough.</li>
-  <li><img src="images/ml_outcome.JPG" width="700" height="280"></li>
 </ul>
 
+<p>Console:</p>
+<img src="images/ml_outcome.JPG" width="700" height="280">
