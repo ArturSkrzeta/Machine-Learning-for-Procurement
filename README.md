@@ -6,7 +6,7 @@
   <li>Team's Clusters (f.e.: Information Technologies, Logistic) are taken as labels in ML model training.</li>
   <li>Accuracy for the model equals 80% which for our purpose is totally enough.</li>
   <li>Application: we can use the script to recoginze Team's Cluster based on gived UNSPSC assigned to spend.</li>
-  <li>This recognition enables us to distribute workload among partucular teams./li>
+  <li>This recognition enables us to distribute workload among partucular teams.</li>
 </ul>
 
 <p>Console:</p>
