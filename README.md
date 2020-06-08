@@ -1,4 +1,5 @@
-<p>Script description</p>
+<h2>Machine Learning for Procurement</h2>
+<h3>Intro</h3>
 <ul>
   <li>UNSPSC coding is an international standard of spend classification.</li>
   <li>UNSPSC coding consists of unique number along with its description.</li>
@@ -9,5 +10,5 @@
   <li>This recognition enables us to distribute workload among partucular teams.</li>
 </ul>
 
-<p>Console:</p>
+<h3>Demo</h3>
 <img src="images/ml_outcome.JPG" width="700" height="280">
