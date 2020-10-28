@@ -72,14 +72,14 @@
 									<h3>Demo</h3>
 									<p>Script perfoms following steps:</p>
 									<ol>
-									  <li>Loding features - lables data into memory.</li>
+									  <li>Loading features - lables data into memory.</li>
 										<li>Splitting data into training and testing subsets:
 											<br>
-											- X_train - features for training model.<br>
-											- y_train - labels for training model.<br>
-											- X_test - features for testing model.<br>
-											- y_test - labels for testing model.<br>
-											- X_train featrues has their ow y_train labels respectively.<br>
+											- X_train - features for training model,<br>
+											- y_train - labels for training model,<br>
+											- X_test - features for testing model,<br>
+											- y_test - labels for testing model,<br>
+											- X_train featrues has their ow y_train labels respectively,<br>
 											- X_test featrues has their ow y_test labels respectively.
 										</li>
 										<li>Setting pipeline of voctorizing words and applying LinearSVC algorithm:
@@ -99,6 +99,12 @@
 										<li>Trained model gives labels for new features.</li>
 									</ol>
 									<p>Conclusions:</p>
+									<ul>
+										<li>Here is the structure of data input.</li>
+										<li>First column is the column of labels.</li>
+										<li>Second column is the column of features.</li>
+										<li>Each feature has a label assigned.</li>
+									</ul>
 									<img src="images/datainput.JPG">
 									<ul>
 										<li>Spend specifications are taken as features in ML model training.</li>
@@ -110,7 +116,7 @@
 									</ul>
 									<img src="images/ml_outcome.JPG">
 									<ul>
-										<li>Here we can see the overall accuracy and accuracy for particular team.</li>
+										<li>Here we can see both the overall accuracy and the accuracy for a particular team.</li>
 									</ul>
 								</div>
 							</section>
