@@ -61,7 +61,7 @@
 									<ul class="feature-icons">
 										<li class="icon solid fa-check">Sklearn</li>
 										<li class="icon solid fa-check">Pandas</li>
-										<li class="icon solid fa-check">LinearSVC algoritm</li>
+										<li class="icon solid fa-check">LinearSVC algorithm</li>
 									</ul>
 								</div>
 							</section>
@@ -70,11 +70,34 @@
 							<section id="three">
 								<div class="container">
 									<h3>Demo</h3>
-									<img src="images/diagram.jpeg" width="780">
 									<p>Script perfoms following steps:</p>
-									<ul>
-									  <li>Step 1st: preparing UML diagram that shows all of the classes along with associations bettwen them.
-									</ul>
+									<ol>
+									  <li>Loding features - lables data into memory.</li>
+										<li>Splitting data into training and testing subsets:
+											<br>
+											- X_train - features for training model.<br>
+											- y_train - labels for training model.<br>
+											- X_test - features for testing model.<br>
+											- y_test - labels for testing model.<br>
+											- X_train featrues has their ow y_train labels respectively.<br>
+											- X_test featrues has their ow y_test labels respectively.
+										</li>
+										<li>Setting pipeline of voctorizing words and applying LinearSVC algorithm:
+											<br>
+											- Word Vectorization means replacing words with numbers so that machine can compute it<br>
+											- the often specific occurs, the bigger value it gets<br>
+											- outcome of vectorization is a list with the numbers where each item is a signle word
+										</li>
+										<li>Training ML model using subsets X_train and y_train.</li>
+										<li>Using trained model to predict labels for test features from X_test.</li>
+										<li>We can assess model's accuracy by comparing received predictons with respective test labels from y_test.
+											<br>
+											- accuracy can be measured as divison: predictions / y_test.<br>
+											- when it's highet than 80% then for my needs model is reliable.
+										</li>
+										<li>Once I find model reliable, I can put new features that model has not seen through.</li>
+										<li>Trained model gives labels for new features.</li>
+									</ol>
 								</div>
 							</section>
 
