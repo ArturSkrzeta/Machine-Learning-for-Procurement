@@ -1,4 +1,4 @@
-	<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 
 <html>
 	<head>
@@ -46,9 +46,17 @@
 							<section id="one">
 								<div class="container">
 									<header class="major">
-										<h2>Machine Learning in Porcurement</h2>
+										<h2>Stock Portfolio Management System</h2>
 										<h3>Intro</h3>
-										<p>Spend analysis is necessary for reviewing procurement spend to decrease costs, increase efficiency or improve supplier relationships. ML model allows to recognize a spend type based on its specification.</p>
+										<p>Making good investemnt decisions requires you to keep all investing product details in one place.
+											Portfolio enables you to follow your stock exchange transactions along with their parameters as well as your private comments or insights.</p>
+										<p>Application features:</p>
+										<ul>
+											<li>Flask back-end.</li>
+											<li>Pure HTML and CSS layout.</li>
+											<li>JavaScript elements.</li>
+											<li>Dynamic html template content with Flask variables and database queries.</li>
+										<ul>
 									</header>
 								</div>
 							</section>
@@ -59,9 +67,10 @@
 									<h3>Features</h3>
 									<p>App includes following features:</p>
 									<ul class="feature-icons">
-										<li class="icon solid fa-check">Sklearn</li>
-										<li class="icon solid fa-check">Pandas</li>
-										<li class="icon solid fa-check">LinearSVC algorithm</li>
+										<li class="icon solid fa-check">Flask</li>
+										<li class="icon solid fa-check">CSS</li>
+										<li class="icon solid fa-check">HTML</li>
+										<li class="icon solid fa-check">ORM</li>
 									</ul>
 								</div>
 							</section>
@@ -70,88 +79,34 @@
 							<section id="three">
 								<div class="container">
 									<h3>Demo</h3>
-									<p>Script perfoms following steps:</p>
-									<ol>
-									  <li>Loading features - lables data into memory.</li>
-										<li>Splitting data into training and testing subsets:
-											<br>
-											- X_train - features for training model,<br>
-											- y_train - labels for training model,<br>
-											- X_test - features for testing model,<br>
-											- y_test - labels for testing model,<br>
-											- X_train featrues has their ow y_train labels respectively,<br>
-											- X_test featrues has their ow y_test labels respectively.
-										</li>
-										<li>Setting pipeline of voctorizing words and applying LinearSVC algorithm:
-											<br>
-											- Word Vectorization means replacing words with numbers so that machine can compute it<br>
-											- the often specific occurs, the bigger value it gets<br>
-											- outcome of vectorization is a list with the numbers where each item is a signle word
-										</li>
-										<li>Training ML model using subsets X_train and y_train.</li>
-										<li>Using trained model to predict labels for test features from X_test.</li>
-										<li>We can assess model's accuracy by comparing received predictons with respective test labels from y_test.
-											<br>
-											- accuracy can be measured as divison: predictions / y_test.<br>
-											- when it's highet than 80% then for my needs model is reliable.
-										</li>
-										<li>Once I find model reliable, I can put new features that model has not seen through.</li>
-										<li>Trained model gives labels for new features.</li>
-									</ol>
-									<p>Input:</p>
+									<p>Application:</p>
+									<img src="images/stock.gif" width="780">
 									<ul>
-										<li>Here is the structure of data input.</li>
-										<li>First column is the column of labels.</li>
-										<li>Second column is the column of features.</li>
-										<li>Each feature has a label assigned.</li>
-									</ul>
-									<img src="images/datainput.JPG">
-									<ul>
-										<li>Spend specifications are taken as features in ML model training.</li>
-										<li>Team's Clusters (f.e.: Information Technologies, Logistic) are taken as labels in ML model training.</li>
-										<li>Accuracy for the model equals 80% which for our purpose is totally enough.</li>
-										<li>80% accuracy means that 80% of predicted labels for testing features are in line with testing lables.</li>
-										<li>Application: we can use the ML model to recoginze Team's Cluster based on given spend specification assigned to spend.</li>
-										<li>This recognition enables us to distribute workload among partucular teams.</li>
-									</ul>
-									<img src="images/ml_outcome.JPG">
-									<ul>
-										<li>Here we can see both the overall accuracy and the accuracy for a particular team.</li>
-									</ul>
-									<p>Output:</p>
-									<img src="images/dataoutput.JPG">
-									<ul>
-										<li>Above we can see the final output where ML model assigned labels to new features which have been never introduced to model.</li>
-										<li>New features:
-											<br>
-											- Box file storage<br>
-											-	Data archiving on server<br>
-											- Building enginnering construction<br>
-											- Automation business process<br>
-											- Computer standing workstation
-										</li>
-										<li>Script saves output in separate fie in current project directory.</li>
+										<li>Single site application.</li>
+										<li>Application offers inserting form and all records table.</li>
+										<li>Table reflects database's table.</li>
 									</ul>
 								</div>
 							</section>
-
 
 						<!-- Four -->
 							<section id="four">
 								<div class="container">
 									<h3>Setup</h3>
-									<p>Python libraries installation required.</p>
+									<p>Python library installation required:</p>
 									<ul>
-										<li>pip install sklearn</li>
-										<li>pip install pandas</li>
+										<li>pip install flask</li>
+										<li>pip install flask-sqlalchemy</li>
+										<li>pip install flask-wtf</li>
 									</ul>
 								</div>
 							</section>
 
+						<!-- Five -->
 							<section id="five">
 								<div class="container">
 									<h3>Source Code</h3>
-									<p>You can view the source code: <a href="https://github.com/ArturSkrzeta/Machine-Learning-for-Procurement/tree/master/ml-project">HERE</a></p>
+									<p>You can view the source code: <a href="https://github.com/ArturSkrzeta/Stock-Portfolio-Management-System-with-Flask/tree/main/project">HERE</a></p>
 									<p>&nbsp</p>
 								</div>
 							</section>
