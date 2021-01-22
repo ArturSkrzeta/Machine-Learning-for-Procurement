@@ -83,7 +83,12 @@
 										</li>
 										<li>Setting pipeline of voctorizing words and applying <b>LinearSVC</b> algorithm:
 											<br>
-											- Word Vectorization means replacing words with numbers so that machine can compute it.<br>
+											- We need to apply <b>word vectorization</b> when working with word features.<br>
+											- To do so, we put all the words from all the labeled samples into one bag - <b>bag of words</b>.<br>
+											- Then we check each sample's word features against the bag of words.<br>
+											- While we checking, we create sub-list of smaple's word features which length eguals number of words in current smaple.<br>
+											- Checking depends on counting sample's word occurance.<br>
+											- Replacing words with numbers so that machine can compute it.<br>
 											- The more frequently a word apperas, the bigger value it gets.<br>
 											- Outcome of vectorization is a list with the numbers where each item is a signle word.
 										</li>
